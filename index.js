@@ -6,7 +6,7 @@ const port = 3000;
 
 app.use(express.json());
 
-app.get('/ocr', (req, res) => {
+app.get('/', (req, res) => {
   const imageUrl = req.query.image;
 
   if (!imageUrl) {
